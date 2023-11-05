@@ -1,4 +1,4 @@
-{
+export const countries: Record<string, string> = {
     "AD": "Andorra",
     "AE": "United Arab Emirates",
     "AF": "Afghanistan",
@@ -254,4 +254,4 @@
     "ZA": "South Africa",
     "ZM": "Zambia",
     "ZW": "Zimbabwe"
-}
+};

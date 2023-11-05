@@ -1,5 +1,7 @@
 <template>
-	<SampleElement msg="Hello, World!"/>
+	<div class="bg-fire absolute top-0 left-0 w-full h-full">
+		<SampleElement msg="Hello, World!"/>
+	</div>
 </template>
 
 <script lang="ts">
@@ -17,15 +19,6 @@ export default {
 @font-face {
 	font-family: Geist;
 	src: url(./assets/fonts/GeistVF.woff2) format(woff2);
-}
-:root {
-	--main: #232324;
-	--main-text: #FFF;
-}
-body {
-	background-color: var(--main);
-	color: var(--main-text);
-	margin: 0;
 }
 #app {
 	font-family: Geist, Helvetica, Arial, sans-serif;
