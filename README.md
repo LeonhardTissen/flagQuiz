@@ -1,4 +1,4 @@
-# vueKickoff
+# flagQuiz
 
 ## Project setup
 ```
