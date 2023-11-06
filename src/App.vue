@@ -1,5 +1,6 @@
 <template>
 	<div class="bg-slate-600 text-blue-100 absolute top-0 left-0 w-full min-h-full flex items-center flex-col justify-center">
+		<p id="timer" class="fixed top-0 left-0 m-2">0:00.000</p>
 		<h1 id="text" class="text-center text-4xl m-20">
 			Welcome to <span class="text-yellow-200">Flag Quiz</span>!
 		</h1>

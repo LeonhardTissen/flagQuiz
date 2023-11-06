@@ -70,7 +70,6 @@ export const countries: FlagList = {
     "ER": "Eritrea",
     "ES": "Spain",
     "ET": "Ethiopia",
-    "EU": "Europe",
     "FI": "Finland",
     "FJ": "Fiji",
     "FK": "Falkland Islands (Malvinas)",
