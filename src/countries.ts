@@ -1,4 +1,6 @@
-export const countries: Record<string, string> = {
+export type FlagList = Record<string, string>;
+
+export const countries: FlagList = {
     "AD": "Andorra",
     "AE": "United Arab Emirates",
     "AF": "Afghanistan",
@@ -255,3 +257,76 @@ export const countries: Record<string, string> = {
     "ZM": "Zambia",
     "ZW": "Zimbabwe"
 };
+
+const europeanCountries: FlagList = {
+    "AD": "Andorra",
+    "AL": "Albania",
+    "AM": "Armenia",
+    "AT": "Austria",
+    "AX": "\u00c5land Islands",
+    "AZ": "Azerbaijan",
+    "BA": "Bosnia and Herzegovina",
+    "BE": "Belgium",
+    "BG": "Bulgaria",
+    "BY": "Belarus",
+    "CH": "Switzerland",
+    "CY": "Cyprus",
+    "CZ": "Czech Republic",
+    "DE": "Germany",
+    "DK": "Denmark",
+    "EE": "Estonia",
+    "ES": "Spain",
+    "FI": "Finland",
+    "FO": "Faroe Islands",
+    "FR": "France",
+    "GE": "Georgia",
+    "GG": "Guernsey",
+    "GI": "Gibraltar",
+    "GR": "Greece",
+    "HR": "Croatia",
+    "HU": "Hungary",
+    "IE": "Ireland",
+    "IM": "Isle of Man",
+    "IS": "Iceland",
+    "IT": "Italy",
+    "JE": "Jersey",
+    "KG": "Kyrgyzstan",
+    "KZ": "Kazakhstan",
+    "LI": "Liechtenstein",
+    "LT": "Lithuania",
+    "LU": "Luxembourg",
+    "LV": "Latvia",
+    "MC": "Monaco",
+    "MD": "Moldova, Republic of",
+    "ME": "Montenegro",
+    "MK": "North Macedonia",
+    "MT": "Malta",
+    "NL": "Netherlands",
+    "NO": "Norway",
+    "PL": "Poland",
+    "PT": "Portugal",
+    "RO": "Romania",
+    "RS": "Serbia",
+    "RU": "Russian Federation",
+    "SE": "Sweden",
+    "SI": "Slovenia",
+    "SJ": "Svalbard and Jan Mayen Islands",
+    "SK": "Slovakia",
+    "SM": "San Marino",
+    "UA": "Ukraine",
+    "UK": "United Kingdom",
+    "VA": "Holy See (Vatican City State)"
+};
+
+const testFlags: FlagList = {
+    "DE": "Germany",
+    "DK": "Denmark",
+    "EE": "Estonia",
+    "ES": "Spain",
+}
+
+export const gameTypes: Record<string, FlagList> = {
+    'All countries': countries,
+    'Europe': europeanCountries,
+    'Test Flags': testFlags
+}
