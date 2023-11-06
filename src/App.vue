@@ -4,15 +4,15 @@
 			Welcome to <span class="text-yellow-200">Flag Quiz</span>!
 		</h1>
 		<div id="games" class="text-center">
-			<div id="modes" class="flex justify-center">
+			<div id="modes" class="flex justify-center flex-wrap">
 				<GameComponent v-for="(_, game) in gameTypes" :key="game" :code="game" :name="game" />
 			</div>
-			<hr class="game-button w-80 m-auto border-charcoal border-2 rounded-lg my-4">
-			<div id="difficulties" class="flex justify-center">
+			<hr class="game-button m-auto border-charcoal border-2 rounded-lg my-4" style="width: 80%">
+			<div id="difficulties" class="flex justify-center flex-wrap">
 				<DifficultyComponent v-for="(amount, difficulty) in difficulties" :key="difficulty" :code="difficulty" :name="difficulty" :amount="amount"/>
 			</div>
 		</div>
-		<div id="countries" class="flex flex-wrap gap-2 justify-center">
+		<div id="countries" class="flex flex-wrap gap-2 justify-center mb-10">
 			<CountryComponent v-for="(country, code) in countries" :key="code" :code="code" :name="country" />
 		</div>
 		<div id="bar" class="bg-charcoal text-yellow-200 h-10 w-0 fixed bottom-0 left-0 transition-all flex items-center text-3xl"></div>
