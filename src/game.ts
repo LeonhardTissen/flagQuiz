@@ -5,12 +5,15 @@ let countriesToGuess: Array<string> = [];
 let totalFlags: number = 0;
 let flagsGuessed: number = 0;
 let maximumFlagOptions: number = 3;
+export let awaitingPick: boolean = false;
 
 function getRandomFlags(flagCount: number): Array<string> {
+    console.log(countriesToGuess);
     const picks: Set<string> = new Set();
     while (picks.size < Math.min(flagCount, countriesToGuess.length)) {
         picks.add(choice(countriesToGuess))
     }
+    console.log(picks);
     return Array.from(picks);
 }
 
@@ -41,9 +44,11 @@ function showAllFlagText(): void {
 let correctPick: null | string = null;
 
 export function guessFlag(guessPick: string): void {
+    if (!awaitingPick) return;
+    
     const isCorrect = guessPick === correctPick;
     
-    setText(isCorrect ? 'That\'s correct!' : 'That\'s wrong.');
+    awaitingPick = false;
     
     if (isCorrect) {
         setText('That\'s correct!');
@@ -103,6 +108,7 @@ export function continueRound(): void {
     correctPick = choice(picks);
     
     setText(`Pick the correct flag for ${countries[correctPick]}.`);
+    awaitingPick = true;
 
     picks.forEach((pick) => {
         showFlag(pick);

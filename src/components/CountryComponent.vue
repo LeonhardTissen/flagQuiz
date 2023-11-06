@@ -3,7 +3,7 @@
         <div class="flag pointer-events-none">
             <img :src="require(`../assets/imgs/svg/${code?.toLowerCase()}.svg`)" :alt="name" class="w-20" />
         </div>
-        <div class="name hidden pointer-events-none">{{ name }}</div>
+        <div class="name hidden pointer-events-none text-l text-center text-zinc-200">{{ name }}</div>
     </div>
 </template>
   
@@ -23,14 +23,3 @@ export default {
     }
 };
 </script>
-  
-<style scoped>
-.country-component {
-    text-align: center;
-}
-
-.name {
-    font-size: 16px;
-}
-</style>
-  

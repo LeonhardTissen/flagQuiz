@@ -7,9 +7,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				fire: '#F16439',
 				charcoal: '#1F231D',
-				sun: '#FCC906',
 			}
 		},
 	},

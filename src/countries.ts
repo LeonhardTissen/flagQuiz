@@ -314,7 +314,6 @@ const europeanCountries: FlagList = {
     "SK": "Slovakia",
     "SM": "San Marino",
     "UA": "Ukraine",
-    "UK": "United Kingdom",
     "VA": "Holy See (Vatican City State)"
 };
 
