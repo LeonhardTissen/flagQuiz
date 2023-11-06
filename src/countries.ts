@@ -40,7 +40,7 @@ export const countries: FlagList = {
     "BZ": "Belize",
     "CA": "Canada",
     "CC": "Cocos (Keeling) Islands",
-    "CD": "Congo, the Democratic Republic of the",
+    "CD": "Democratic Republic of the Congo",
     "CF": "Central African Republic",
     "CG": "Republic of the Congo",
     "CH": "Switzerland",
