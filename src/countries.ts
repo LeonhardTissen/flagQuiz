@@ -328,7 +328,7 @@ const africanCountries: FlagList = {
     "TD": "Chad",
     "KM": "Comoros",
     "CG": "Republic of the Congo",
-    "CD": "Congo, the Democratic Republic of the",
+    "CD": "Congo, the Democratic Republic",
     "DJ": "Djibouti",
     "EG": "Egypt",
     "GQ": "Equatorial Guinea",
