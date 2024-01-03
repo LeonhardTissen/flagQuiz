@@ -450,7 +450,6 @@ const americanCountries = {
     "GL": "Greenland",
     "GP": "Guadeloupe",
     "GT": "Guatemala",
-    "GU": "Guam",
     "GY": "Guyana",
     "HN": "Honduras",
     "HT": "Haiti",
@@ -482,6 +481,7 @@ const americanCountries = {
 const oceaniaCountries: FlagList = {
     "AU": "Australia",
     "FJ": "Fiji",
+	"GU": "Guam",
     "KI": "Kiribati",
     "MH": "Marshall Islands",
     "FM": "Micronesia, Federated States of",
